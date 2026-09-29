@@ -1,3 +1,2 @@
 # app-ads.txt for Duck and Dive (https://duckanddive.github.io)
-# AdMob 게시자 ID를 받으면 아래 줄의 #을 지우고 pub- 뒤를 채운다.
-# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-6524006128638069, DIRECT, f08c47fec0942fa0
