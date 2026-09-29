@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TOPPLE: Domino Roguelike — Data Deletion</title>
+<meta name="description" content="TOPPLE: Domino Roguelike 데이터 삭제 안내 / Data Deletion / データ削除のご案内">
+<style>
+:root { --bg:#ffffff; --fg:#1d2330; --muted:#5b6474; --line:#dde2ea; --accent:#b8860b; --head:#f3f5f8; --btn:#eef1f5; --card:#fff8e1; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161c27; --fg:#e8ecf2; --muted:#9aa5b4; --line:#2c3545; --accent:#ffd43b; --head:#1f2735; --btn:#242d3c; --card:#231f12; } }
+* { box-sizing:border-box; }
+html { -webkit-text-size-adjust:100%; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.7 -apple-system, "Segoe UI", Roboto, "Noto Sans KR", "Noto Sans JP", "Apple SD Gothic Neo", "Hiragino Sans", sans-serif; word-break:keep-all; overflow-wrap:anywhere; }
+main { max-width:760px; margin:0 auto; padding:16px 16px 48px; }
+nav { position:sticky; top:0; z-index:1; background:var(--bg); border-bottom:1px solid var(--line); padding:10px 0; display:flex; gap:8px; flex-wrap:wrap; }
+nav button { font:inherit; font-size:15px; padding:8px 14px; min-height:44px; border-radius:10px; border:1px solid var(--line); background:var(--btn); color:var(--fg); cursor:pointer; }
+nav button[aria-pressed="true"] { background:var(--accent); color:#1a1400; border-color:var(--accent); font-weight:700; }
+h1 { font-size:1.45em; line-height:1.35; margin:24px 0 8px; }
+h2 { font-size:1.12em; margin:28px 0 6px; padding-top:12px; border-top:1px solid var(--line); }
+p, li { margin:6px 0; }
+ul, ol { padding-left:1.4em; }
+ol > li { margin:10px 0; }
+a { color:inherit; text-decoration-color:var(--accent); text-underline-offset:3px; }
+.table { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:10px 0; border:1px solid var(--line); border-radius:10px; }
+table { border-collapse:collapse; min-width:620px; width:100%; font-size:15px; }
+th, td { text-align:left; vertical-align:top; padding:10px 12px; border-bottom:1px solid var(--line); }
+th { background:var(--head); white-space:nowrap; }
+tr:last-child td { border-bottom:none; }
+.card { background:var(--card); border:2px solid var(--accent); border-radius:14px; padding:14px 16px; margin:16px 0; }
+.card dl { margin:0; display:grid; grid-template-columns:auto 1fr; gap:4px 14px; }
+.card dt { color:var(--muted); }
+.card dd { margin:0; font-weight:700; }
+.step { font-weight:700; }
+.note { color:var(--muted); font-size:15px; }
+footer { margin-top:36px; color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Language">
+<button type="button" data-lang="ko">한국어</button>
+<button type="button" data-lang="en">English</button>
+<button type="button" data-lang="ja">日本語</button>
+</nav>
+<section id="ko" lang="ko" hidden>
+<h1>TOPPLE: Domino Roguelike 데이터 삭제 안내</h1>
+<div class="card"><dl>
+<dt>앱</dt><dd>TOPPLE: Domino Roguelike</dd>
+<dt>개발자</dt><dd>Duck and Dive</dd>
+</dl></div>
+<h2>1. 데이터 삭제를 요청하는 방법</h2>
+<ol>
+<li><span class="step">기기에 저장된 모든 게임 데이터</span> (설정·기록·광고 제거 구매 여부 표시)<br>
+앱을 삭제하거나, 기기 설정 ▸ 앱 ▸ TOPPLE ▸ 저장공간 ▸ 데이터 삭제를 누르면 <strong>즉시 삭제</strong>됩니다.</li>
+<li><span class="step">광고 ID</span><br>
+기기 설정(Android: 설정 ▸ 개인정보 보호 ▸ 광고)에서 광고 ID를 재설정하거나 삭제할 수 있습니다.</li>
+<li><span class="step">순위표 기록</span><br>
+Google 계정의 Play 게임즈 설정에서 관리·삭제할 수 있습니다.</li>
+<li><span class="step">그 밖의 요청</span><br>
+<a href="mailto:duckanddive.games@gmail.com?subject=Data%20deletion%20request%20-%20TOPPLE">duckanddive.games@gmail.com</a> 으로 제목 “Data deletion request - TOPPLE”를 적어 메일을 보내 주세요.</li>
+</ol>
+<h2>2. 삭제되는 데이터와 보관 기간</h2>
+<ul>
+<li>운영자는 <strong>서버에 개인정보를 보관하지 않습니다.</strong> 게임 데이터는 이용자의 기기에만 저장되며, 위 1번 방법으로 즉시 삭제됩니다.</li>
+<li>이메일 문의 내용은 요청 처리에 필요한 기간 동안 보관한 뒤, 법적 보관 의무가 없으면 삭제합니다.</li>
+<li>Google 서비스(AdMob, Google Play 결제, Play 게임즈 서비스)가 처리한 데이터는 각 Google 정책의 보관 기간을 따르며, <strong>운영자가 직접 삭제할 수 없습니다.</strong> Google 계정의 데이터 및 개인 정보 보호 설정(<a href="https://myaccount.google.com/data-and-privacy" rel="noopener">https://myaccount.google.com/data-and-privacy</a>)과 내 광고 센터(<a href="https://myadcenter.google.com/" rel="noopener">https://myadcenter.google.com/</a>)에서 관리할 수 있습니다. 자세한 내용은 Google 개인정보처리방침(<a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>)을 참고하세요.</li>
+<li>구매 기록은 Google Play가 법적 의무에 따라 보관할 수 있습니다.</li>
+</ul>
+<p class="note">개인정보처리방침: <a href="https://duckanddive.github.io/topple/privacy/?lang=ko">https://duckanddive.github.io/topple/privacy/</a></p>
+</section>
+<section id="en" lang="en" hidden>
+<h1>TOPPLE: Domino Roguelike — Data Deletion</h1>
+<div class="card"><dl>
+<dt>App</dt><dd>TOPPLE: Domino Roguelike</dd>
+<dt>Developer</dt><dd>Duck and Dive</dd>
+</dl></div>
+<h2>1. How to request deletion of your data</h2>
+<ol>
+<li><span class="step">All game data stored on your device</span> (settings, records, and the ad-removal purchase flag)<br>
+Uninstall the app, or go to your device Settings ▸ Apps ▸ TOPPLE ▸ Storage ▸ Clear data. It is <strong>deleted immediately</strong>.</li>
+<li><span class="step">Advertising ID</span><br>
+Reset or delete it in your device settings (Android: Settings ▸ Privacy ▸ Ads).</li>
+<li><span class="step">Leaderboard records</span><br>
+Manage or delete them in your Google account's Play Games settings.</li>
+<li><span class="step">Other requests</span><br>
+Email <a href="mailto:duckanddive.games@gmail.com?subject=Data%20deletion%20request%20-%20TOPPLE">duckanddive.games@gmail.com</a> with the subject “Data deletion request - TOPPLE”.</li>
+</ol>
+<h2>2. Data that is deleted or kept, and for how long</h2>
+<ul>
+<li>We <strong>do not keep personal information on any server.</strong> Game data is stored only on your device and is deleted immediately using step 1 above.</li>
+<li>Information in emails you send us is kept only as long as needed to handle your request, then deleted unless we are legally required to keep it.</li>
+<li>Data processed by Google services (AdMob, Google Play Billing, Play Games Services) is retained according to each Google policy, and <strong>we cannot delete it directly.</strong> You can manage it in your Google Account's Data &amp; privacy settings (<a href="https://myaccount.google.com/data-and-privacy" rel="noopener">https://myaccount.google.com/data-and-privacy</a>) and My Ad Center (<a href="https://myadcenter.google.com/" rel="noopener">https://myadcenter.google.com/</a>). See the Google Privacy Policy (<a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>).</li>
+<li>Google Play may retain purchase records to meet its legal obligations.</li>
+</ul>
+<p class="note">Privacy Policy: <a href="https://duckanddive.github.io/topple/privacy/?lang=en">https://duckanddive.github.io/topple/privacy/</a></p>
+</section>
+<section id="ja" lang="ja" hidden>
+<h1>TOPPLE: Domino Roguelike データ削除のご案内</h1>
+<div class="card"><dl>
+<dt>アプリ</dt><dd>TOPPLE: Domino Roguelike</dd>
+<dt>開発者</dt><dd>Duck and Dive</dd>
+</dl></div>
+<h2>1. データ削除の請求方法</h2>
+<ol>
+<li><span class="step">端末に保存されたすべてのゲームデータ</span>(設定・記録・広告削除の購入有無)<br>
+アプリを削除するか、端末の設定 ▸ アプリ ▸ TOPPLE ▸ ストレージ ▸ データを削除 を押すと<strong>直ちに削除</strong>されます。</li>
+<li><span class="step">広告 ID</span><br>
+端末の設定(Android:設定 ▸ プライバシー ▸ 広告)でリセット・削除できます。</li>
+<li><span class="step">ランキング記録</span><br>
+Google アカウントの Play ゲームズ設定で管理・削除できます。</li>
+<li><span class="step">その他のご請求</span><br>
+<a href="mailto:duckanddive.games@gmail.com?subject=Data%20deletion%20request%20-%20TOPPLE">duckanddive.games@gmail.com</a> 宛てに、件名「Data deletion request - TOPPLE」でメールをお送りください。</li>
+</ol>
+<h2>2. 削除・保存されるデータと期間</h2>
+<ul>
+<li>運営者は<strong>サーバーに個人情報を保存していません。</strong>ゲームデータは端末内にのみ保存され、上記 1 の方法で直ちに削除されます。</li>
+<li>お問い合わせメールの内容は、対応に必要な期間保管し、法令上の保管義務がない限り削除します。</li>
+<li>Google サービス(AdMob、Google Play 決済、Play ゲームズ サービス)が処理したデータは、各 Google ポリシーの保存期間に従い、<strong>運営者が直接削除することはできません。</strong>Google アカウントの「データとプライバシー」(<a href="https://myaccount.google.com/data-and-privacy" rel="noopener">https://myaccount.google.com/data-and-privacy</a>)およびマイ アド センター(<a href="https://myadcenter.google.com/" rel="noopener">https://myadcenter.google.com/</a>)で管理できます。詳しくは Google プライバシーポリシー(<a href="https://policies.google.com/privacy" rel="noopener">https://policies.google.com/privacy</a>)をご確認ください。</li>
+<li>購入記録は、Google Play が法的義務に基づき保存する場合があります。</li>
+</ul>
+<p class="note">プライバシーポリシー:<a href="https://duckanddive.github.io/topple/privacy/?lang=ja">https://duckanddive.github.io/topple/privacy/</a></p>
+</section>
+<footer><p>© 2026 Duck and Dive</p></footer>
+</main>
+<script>
+(function () {
+  var langs = ["ko", "en", "ja"];
+  function pick() {
+    var q = new URLSearchParams(location.search).get("lang") || location.hash.replace("#", "");
+    if (langs.indexOf(q) >= 0) return q;
+    var list = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"];
+    for (var i = 0; i < list.length; i++) {
+      var l = String(list[i]).toLowerCase();
+      if (l.indexOf("ko") === 0) return "ko";
+      if (l.indexOf("ja") === 0) return "ja";
+      if (l.indexOf("en") === 0) return "en";
+    }
+    return "en";
+  }
+  function show(lang) {
+    langs.forEach(function (l) {
+      document.getElementById(l).hidden = l !== lang;
+      document.querySelector('nav button[data-lang="' + l + '"]').setAttribute("aria-pressed", l === lang ? "true" : "false");
+    });
+    document.documentElement.lang = lang;
+  }
+  document.querySelectorAll("nav button").forEach(function (b) {
+    b.addEventListener("click", function () {
+      var l = b.getAttribute("data-lang");
+      show(l);
+      history.replaceState(null, "", "?lang=" + l);
+    });
+  });
+  show(pick());
+})();
+</script>
+<noscript><style>section[hidden] { display:block !important; }</style></noscript>
+</body>
+</html>

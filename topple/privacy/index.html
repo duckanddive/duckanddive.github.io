@@ -6,8 +6,8 @@
 <title>TOPPLE: Domino Roguelike — Privacy Policy</title>
 <meta name="description" content="TOPPLE: Domino Roguelike 개인정보처리방침 / Privacy Policy / プライバシーポリシー">
 <style>
-:root { --bg:#ffffff; --fg:#1d2330; --muted:#5b6474; --line:#dde2ea; --accent:#b8860b; --head:#f3f5f8; --btn:#eef1f5; }
-@media (prefers-color-scheme: dark) { :root { --bg:#161c27; --fg:#e8ecf2; --muted:#9aa5b4; --line:#2c3545; --accent:#ffd43b; --head:#1f2735; --btn:#242d3c; } }
+:root { --bg:#ffffff; --fg:#1d2330; --muted:#5b6474; --line:#dde2ea; --accent:#b8860b; --head:#f3f5f8; --btn:#eef1f5; --card:#fff8e1; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161c27; --fg:#e8ecf2; --muted:#9aa5b4; --line:#2c3545; --accent:#ffd43b; --head:#1f2735; --btn:#242d3c; --card:#231f12; } }
 * { box-sizing:border-box; }
 html { -webkit-text-size-adjust:100%; }
 body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.7 -apple-system, "Segoe UI", Roboto, "Noto Sans KR", "Noto Sans JP", "Apple SD Gothic Neo", "Hiragino Sans", sans-serif; word-break:keep-all; overflow-wrap:anywhere; }
@@ -18,13 +18,20 @@ nav button[aria-pressed="true"] { background:var(--accent); color:#1a1400; borde
 h1 { font-size:1.45em; line-height:1.35; margin:24px 0 8px; }
 h2 { font-size:1.12em; margin:28px 0 6px; padding-top:12px; border-top:1px solid var(--line); }
 p, li { margin:6px 0; }
-ul { padding-left:1.3em; }
+ul, ol { padding-left:1.4em; }
+ol > li { margin:10px 0; }
 a { color:inherit; text-decoration-color:var(--accent); text-underline-offset:3px; }
 .table { overflow-x:auto; -webkit-overflow-scrolling:touch; margin:10px 0; border:1px solid var(--line); border-radius:10px; }
 table { border-collapse:collapse; min-width:620px; width:100%; font-size:15px; }
 th, td { text-align:left; vertical-align:top; padding:10px 12px; border-bottom:1px solid var(--line); }
 th { background:var(--head); white-space:nowrap; }
 tr:last-child td { border-bottom:none; }
+.card { background:var(--card); border:2px solid var(--accent); border-radius:14px; padding:14px 16px; margin:16px 0; }
+.card dl { margin:0; display:grid; grid-template-columns:auto 1fr; gap:4px 14px; }
+.card dt { color:var(--muted); }
+.card dd { margin:0; font-weight:700; }
+.step { font-weight:700; }
+.note { color:var(--muted); font-size:15px; }
 footer { margin-top:36px; color:var(--muted); font-size:14px; }
 </style>
 </head>
@@ -52,7 +59,7 @@ footer { margin-top:36px; color:var(--muted); font-size:14px; }
 <ul><li>기기에 저장된 정보: 앱을 삭제하거나 기기 설정에서 앱 데이터를 삭제하면 즉시 파기됩니다.</li><li>이메일 문의: 문의 처리에 필요한 기간 동안 보관하며, 목적이 달성된 후 관련 법령에 따른 보관 의무가 없으면 지체 없이 삭제합니다.</li></ul>
 <h2>5. 이용자의 권리</h2>
 <p>이용자는 언제든지 개인정보 열람·정정·삭제·처리 정지를 요청할 수 있습니다.</p>
-<ul><li>광고 맞춤 설정: Android 설정 ▸ 개인정보 보호 ▸ 광고에서 광고 ID 삭제·재설정</li><li>광고 동의 변경·맞춤형 광고 거부: 게임 설정 ▸ 개인정보 옵션 (해당 지역에서 표시)</li><li>순위표 기록: Google 계정의 Play 게임즈 설정에서 관리</li><li>삭제 등 그 밖의 요청: 아래 이메일로 요청할 수 있습니다. 운영자가 보유한 정보(문의 메일)는 삭제하고, 기기와 Google 서비스에 저장된 정보는 삭제 방법을 안내합니다.</li></ul>
+<ul><li>광고 맞춤 설정: Android 설정 ▸ 개인정보 보호 ▸ 광고에서 광고 ID 삭제·재설정</li><li>광고 동의 변경·맞춤형 광고 거부: 게임 설정 ▸ 개인정보 옵션 (해당 지역에서 표시)</li><li>순위표 기록: Google 계정의 Play 게임즈 설정에서 관리</li><li>삭제 등 그 밖의 요청: 아래 이메일로 요청할 수 있습니다. 운영자가 보유한 정보(문의 메일)는 삭제하고, 기기와 Google 서비스에 저장된 정보는 삭제 방법을 안내합니다.</li><li>데이터 삭제 방법 안내: <a href="https://duckanddive.github.io/topple/data-deletion/" rel="noopener">https://duckanddive.github.io/topple/data-deletion/</a></li></ul>
 <h2>6. 아동의 개인정보</h2>
 <p>게임은 만 13세 미만 아동을 대상으로 하지 않습니다. 또한 운영자는 만 14세 미만 아동의 개인정보를 알면서 수집하지 않으며, 법정대리인은 아래 이메일로 해당 정보의 삭제를 요청할 수 있습니다.</p>
 <h2>7. 안전성 확보 조치</h2>
@@ -83,7 +90,7 @@ footer { margin-top:36px; color:var(--muted); font-size:14px; }
 <ul><li>Data on your device is deleted when you uninstall the Game or clear its app data.</li><li>Information in emails you send us is kept only as long as needed to handle your request, then deleted unless we are legally required to keep it.</li></ul>
 <h2>6. Your rights and choices</h2>
 <p>You may request access, correction, deletion, or restriction of processing at any time.</p>
-<ul><li>Advertising ID: reset or delete it in your device settings (Android: Settings ▸ Privacy ▸ Ads).</li><li>Consent: Game Settings ▸ Privacy options (shown where applicable).</li><li>Leaderboard data: manage it in your Google account's Play Games settings.</li><li>Deletion and other requests: email us at the address below. We will delete information we hold (such as your emails) and explain how to delete information stored on your device or by Google services.</li><li>EEA/UK users may lodge a complaint with their local data protection authority.</li></ul>
+<ul><li>Advertising ID: reset or delete it in your device settings (Android: Settings ▸ Privacy ▸ Ads).</li><li>Consent: Game Settings ▸ Privacy options (shown where applicable).</li><li>Leaderboard data: manage it in your Google account's Play Games settings.</li><li>Deletion and other requests: email us at the address below. We will delete information we hold (such as your emails) and explain how to delete information stored on your device or by Google services.</li><li>How to delete your data: <a href="https://duckanddive.github.io/topple/data-deletion/" rel="noopener">https://duckanddive.github.io/topple/data-deletion/</a></li><li>EEA/UK users may lodge a complaint with their local data protection authority.</li></ul>
 <h2>7. California residents</h2>
 <p>Sharing your Advertising ID with ad partners may be considered "sharing" for cross-context behavioral advertising under California law. You can manage your advertising choices through your device settings and, where available, through the Game's Settings ▸ Privacy options, including the option to opt out of the sale or sharing of your personal information. We do not sell personal information for money.</p>
 <h2>8. Children</h2>
@@ -110,7 +117,7 @@ footer { margin-top:36px; color:var(--muted); font-size:14px; }
 <ul><li>端末内の情報は、アプリの削除またはアプリデータの消去により直ちに削除されます。</li><li>お問い合わせメールに含まれる情報は、対応に必要な期間保管し、法令上の保管義務がない限り、目的達成後に遅滞なく削除します。</li></ul>
 <h2>5. 利用者の権利と選択</h2>
 <p>利用者はいつでも、開示・訂正・削除・利用停止を請求できます。</p>
-<ul><li>広告 ID:端末の設定(Android:設定 ▸ プライバシー ▸ 広告)でリセット・削除できます。</li><li>同意の変更:ゲーム設定 ▸ プライバシー オプション(対象地域で表示)</li><li>ランキング記録:Google アカウントの Play ゲームズ設定で管理できます。</li><li>削除等のご請求:下記メールでご請求いただけます。運営者が保有する情報(お問い合わせメール)は削除し、端末や Google サービスに保存された情報は削除方法をご案内します。</li></ul>
+<ul><li>広告 ID:端末の設定(Android:設定 ▸ プライバシー ▸ 広告)でリセット・削除できます。</li><li>同意の変更:ゲーム設定 ▸ プライバシー オプション(対象地域で表示)</li><li>ランキング記録:Google アカウントの Play ゲームズ設定で管理できます。</li><li>削除等のご請求:下記メールでご請求いただけます。運営者が保有する情報(お問い合わせメール)は削除し、端末や Google サービスに保存された情報は削除方法をご案内します。</li><li>データ削除の方法:<a href="https://duckanddive.github.io/topple/data-deletion/" rel="noopener">https://duckanddive.github.io/topple/data-deletion/</a></li></ul>
 <h2>6. 子どもの情報</h2>
 <p>本ゲームは 13 歳未満の子どもを対象としておらず、子どもの情報を意図的に取得することはありません。</p>
 <h2>7. お問い合わせ</h2>
